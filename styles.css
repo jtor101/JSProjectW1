@@ -1,7 +1,8 @@
 header {
-    background-image: url(bghead.png)
+    background-image: url(bghead.png)/* background image */
 }
 
 ul {
     margin-top: -35px;
+    /* moves nav upwards to cover up whitespace */
 }
