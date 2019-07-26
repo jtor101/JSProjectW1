@@ -25,9 +25,11 @@ function init() {
 
 window.onload = init;
 
-// HTML IDs
+// HTML IDs: JS name
 // annPayout: annualPayoutJ
 // interestRt: intRtJ
 // yearsPayout: yearsToPayOutJ
+
 // principalOut: principalDueJ
+
 // annCalc: annuityCalcBtn (button)

@@ -30,7 +30,7 @@ function init() {
 
 window.onload = init;
 
-// HTML IDs
+// HTML IDs: JS name
 // mtgPrin: mortgagePrincipalJ
 // mtgInterestRate: mtgIntRtJ
 // loanLength: lengthOfLoanJ

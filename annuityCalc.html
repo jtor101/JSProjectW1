@@ -16,45 +16,46 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 
     <title>Annuity Calculator</title>
 </head>
 
-<body class="bg-light text-center">
-    <header class="jumbotron bg-success">
-        <h1>Working Title Savings & Loan</h1>
+<body class="container-fluid bg-secondary">
+    <header class="jumbotron">
+        <h1 class="text-white text-left">Working Title Savings & Loan</h1>
     </header>
-    <nav class="pb-5">
-        <ul class="nav justify-content-center bg-dark p-3">
-            <li class="nav-item">
-                <a class="btn btn-success nav-link mx-4" href="annuityCalc.html">Annuity Calculator</a>
-            </li>
-            <li class="nav-item">
-                <a class="btn btn-success nav-link mx-4" href="mortgageCalc.html">Mortgage Calculator</a>
-            </li>
-            <li class="nav-item">
-                <a class="btn btn-success nav-link mx-4" href="futureValueCalc.html">Future Value Calculator</a>
-            </li>
-        </ul>
-    </nav>
-    <section class="text-center">
 
-        <p>Annual Payout: <input id="annPayout" type="number"></p>
-        <p>Interest Rate: <input id="interestRt" type="number"></p>
-        <p>Years Over Which Payments Will Be Made: <input id="yearsPayout" type="number"></p>
+    <ul class="nav justify-content-center bg-dark p-3">
+        <li class="nav-item">
+            <a class="btn btn-success nav-link m-3" href="annuityCalc.html">Annuity Calculator</a>
+        </li>
+        <li class="nav-item">
+            <a class="btn btn-success nav-link m-3" href="mortgageCalc.html">Mortgage Calculator</a>
+        </li>
+        <li class="nav-item">
+            <a class="btn btn-success nav-link disabled m-3" href="futureValueCalc.html">Future Value Calculator (coming soon)</a>
+        </li>
+    </ul>
+
+    <section class="bg-secondary text-center">
+        <h2>Calculate Your Annuity Payments!</h2><br>
+
+        <div class="font-weight-bold">Annual Payout: <br><input id="annPayout" type="number"></div>
+
+        <div class="font-weight-bold py-3">Interest Rate: <br><input id="interestRt" type="number"></div>
+
+        <div class="font-weight-bold pb-3">Years Over Which Payments Will Be Made: <br><input id="yearsPayout" type="number"> </div>
 
         <input class="btn btn-success p-3" id="annCalc" type="button" value="Calculate Annuity">
 
-        <p class="pt-4">The Present Value of an Ordinary Annuity is : <input id="principalOut" type="text"></p><br>
+        <p class="pt-4 font-weight-bold">The Present Value of an Ordinary Annuity is: <br><input id="principalOut" type="text"></p><br>
 
 
         <a class="btn btn-primary" href="index.html">Back To Home</a>
-
-
-
-
-        <footer class="jumbotron mt-4 pt-5">by John Torres - 2019</footer>
     </section>
+
+    <footer class="text-center bg-dark text-white mt-4">by John Torres - HartCode 2019</footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

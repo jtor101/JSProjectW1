@@ -1,10 +1,16 @@
 <!-- Annuity calculator -->
-<!-- // HTML IDs
-// annPayout: annualPayoutJ
-// interestRt: intRtJ
-// yearsPayout: yearsToPayOutJ
-// principalOut: principalDueJ
-// annCalc: annuityCalcBtn (button) -->
+<!-- // User Input - depositJ, depIntRtJ, numOfYrsJ
+// Desired Output - futureValueJ, totalIntEarnedJ
+
+// HTML IDs
+// depositAmt: depositJ
+// depInterestRate: depIntRtJ
+// numberOfYrs: numOfYrsJ
+
+// futureVal: futureValueJ
+// intEarnedTotal: totalIntEarnedJ
+
+// valueCalc: valueCalcBtn (button) -->
 
 <!doctype html>
 <html lang="en">
@@ -18,7 +24,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 
-    <title>Mortgage Calculator</title>
+    <title>Future Value Calculator</title>
 </head>
 
 <body class="container-fluid bg-secondary">
@@ -38,30 +44,27 @@
         </li>
     </ul>
 
-    <section class="bg-secondary text-center">
-        <h2>Calculate Your Monthly Mortgage Payments!</h2><br>
+    <section class="bg-secondary">
+        <h2>Future Value Of A Single Deposit</h2>
 
+        <p>Deposit Amount: <input id="depositAmt" type="number"></p>
+        <p>Interest Rate: <input id="depInterestRate" type="number"></p>
+        <p>Number of Years: <input id="numberOfYrs" type="number"></p>
 
-        <p class="font-weight-bold">Mortgage Principal: <br><input id="mtgPrin" type="number"></p>
-        <p class="font-weight-bold py-3">Mortgage Interest Rate: <br><input id="mtgInterestRate" type="number"></p>
-        <p class="font-weight-bold pb-3">Length of Loan: <br><input id="loanLength" type="number"></p>
+        <input class="btn btn-success p-3" id="valueCalc" type="button" value="Calculate Future Value">
 
-        <input class="btn btn-success p-3" id="mtgCalc" type="button" value="Calculate Mortgage Payments">
-
-        <p class="font-weight-bold pt-5">Your Monthly Mortgage Payment: <br><input id="monthlyMortgage" type="text"></p><br>
-        <p class="font-weight-bold pt-2">Your Mortgage's Total Cost: <br><input id="totalCostMtg" type="text"></p><br>
+        <p class="pt-4">Your Deposit's Future Value: <input id="futureVal" type="text"></p><br>
+        <p class="pt-4">Total Interest Earned: <input id="intEarnedTotal" type="text"></p><br>
 
         <a class="btn btn-primary" href="index.html">Back To Home</a>
     </section>
-
-    <footer class="text-center bg-dark text-white mt-4">by John Torres - HartCode 2019</footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="mortgageCalc.js"></script>
+    <script src="futureValueCalc.js"></script>
 </body>
 
 </html>
