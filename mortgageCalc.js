@@ -21,7 +21,7 @@ function mortgageCalc() {
 
     document.getElementById("monthlyMortgage").value = mtgMonthlyJ.toFixed(2);
     document.getElementById("totalCostMtg").value = mtgTotalCostJ.toFixed(2);
-} // Outputs come out, numbers not right.
+}
 
 function init() {
     const mortgageCalcBtn = document.getElementById("mtgCalc");
