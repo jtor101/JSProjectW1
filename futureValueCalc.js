@@ -13,22 +13,17 @@ let futureValueJ, totalIntEarnedJ; // Outputs
 
 function getFutureValInputs() {
     depositJ = Number(document.getElementById("depositAmt").value);
-    depIntRtJ = Number(document.getElementById("depInterestRate").value);
+    depIntRtJ = Number(document.getElementById("depInterestRate").value / 100);
     numOfYrsJ = Number(document.getElementById("numberOfYrs").value);
-    depositJ = Math.ceil(depositJ);
-    depIntRtJ = Math.ceil(depIntRtJ);
-    numOfYrsJ = Math.ceil(numOfYrsJ);
-    console.log(depositJ);
-    console.log(depIntRtJ);
-    console.log(numOfYrsJ);
 } //Inputs verified as logging to console.
 
 
 function futureValCalc() {
     getFutureValInputs();
-    //futureValueJ = 
-    document.getElementById("futureVal").value = futureValueJ;
-    document.getElementById("intEarnedTotal").value = totalIntEarnedJ;
+    futureValueJ = depositJ * Math.pow(1 + depIntRtJ / 12, numOfYrsJ * 12);
+    totalIntEarnedJ = futureValueJ - depositJ;
+    document.getElementById("futureVal").value = futureValueJ.toFixed(2);
+    document.getElementById("intEarnedTotal").value = totalIntEarnedJ.toFixed(2);
 }
 
 function init() {
