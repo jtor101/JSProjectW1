@@ -1,17 +1,17 @@
-// Annuity Calculator
+// Mortgage Monthly Payment Calculator
 // by John Torres
 "use strict"
 
 let mortgagePrincipalJ, mtgIntRtJ, lengthOfLoanJ; // Inputs
 let mtgMonthlyJ, mtgTotalCostJ; // Outputs
 
-function getMortgageInputs() {
+function getMortgageInputs() { // Function for gathering user inputs
     mortgagePrincipalJ = Number(document.getElementById("mtgPrin").value);
     mtgIntRtJ = Number(document.getElementById("mtgInterestRate").value);
     lengthOfLoanJ = Number(document.getElementById("loanLength").value);
 }
 
-function mortgageCalc() {
+function mortgageCalc() { // Function for calculation and output
     getMortgageInputs();
     mtgMonthlyJ =
         mortgagePrincipalJ * (mtgIntRtJ / 1200) /
@@ -23,7 +23,7 @@ function mortgageCalc() {
     document.getElementById("totalCostMtg").value = mtgTotalCostJ.toFixed(2);
 }
 
-function init() {
+function init() { // Function for click event handler initialization
     const mortgageCalcBtn = document.getElementById("mtgCalc");
     mortgageCalcBtn.onclick = mortgageCalc;
 }
@@ -31,6 +31,7 @@ function init() {
 window.onload = init;
 
 // HTML IDs: JS name
+
 // mtgPrin: mortgagePrincipalJ
 // mtgInterestRate: mtgIntRtJ
 // loanLength: lengthOfLoanJ
