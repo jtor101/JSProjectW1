@@ -1,5 +1,14 @@
 header {
-    background-image: url(bghead.png)/* background image */
+    background-image: url(bghead.png);
+    /* background image */
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+section {
+    background-image: url(bigmoneybg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 ul {

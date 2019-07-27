@@ -27,25 +27,29 @@
     <title>Future Value Calculator</title>
 </head>
 
-<body class="container-fluid bg-secondary">
-    <header class="jumbotron">
+<body class="container-fluid bg-success">
+
+    <header class="jumbotron mx-2">
         <h1 class="text-white text-left">Working Title Savings & Loan</h1>
     </header>
 
-    <ul class="nav justify-content-center bg-dark p-3">
+    <ul class="nav justify-content-center bg-dark p-3 mx-2">
         <li class="nav-item">
-            <a class="btn btn-success nav-link m-3" href="annuityCalc.html">Annuity Calculator</a>
+            <a class="btn btn-info nav-link m-3" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-            <a class="btn btn-success nav-link m-3" href="mortgageCalc.html">Mortgage Calculator</a>
+            <a class="btn btn-info nav-link m-3" href="annuityCalc.html">Annuity Calculator</a>
         </li>
         <li class="nav-item">
-            <a class="btn btn-success nav-link disabled m-3" href="futureValueCalc.html">Future Value Calculator (coming soon)</a>
+            <a class="btn btn-info nav-link m-3" href="mortgageCalc.html">Mortgage Calculator</a>
+        </li>
+        <li class="nav-item">
+            <a class="btn btn-info nav-link disabled m-3" href="futureValueCalc.html">Future Value Calculator (coming soon)</a>
         </li>
     </ul>
 
-    <section class="bg-secondary">
-        <h2>Future Value Of A Single Deposit</h2>
+    <section class="m-2">
+        <h2 class="py-4 font-italic text-center bg-dark text-light">Future Value Of A Single Deposit</h2>
 
         <p>Deposit Amount: <input id="depositAmt" type="number"></p>
         <p>Interest Rate: <input id="depInterestRate" type="number"></p>
