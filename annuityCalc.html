@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>Annuity Calculator</title>
 </head>
@@ -22,40 +22,42 @@
     </header>
 
     <!-- Nav -->
-    <ul class="nav justify-content-center bg-dark p-3 mx-2">
-        <li class="nav-item">
-            <a class="btn btn-info nav-link m-3" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="btn btn-info nav-link m-3" href="annuityCalc.html">Annuity Calculator</a>
-        </li>
-        <li class="nav-item">
-            <a class="btn btn-info nav-link m-3" href="mortgageCalc.html">Mortgage Calculator</a>
-        </li>
-        <li class="nav-item">
-            <a class="btn btn-info nav-link m-3" href="futureValueCalc.html">Future Value Calculator</a>
-        </li>
-    </ul>
+    <nav>
+        <ul class="nav justify-content-center bg-dark p-3 mx-2">
+            <li class="nav-item">
+                <a class="btn btn-info nav-link m-3" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-info nav-link m-3" href="annuityCalc.html">Annuity Calculator</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-info nav-link m-3" href="mortgageCalc.html">Mortgage Calculator</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-info nav-link m-3" href="futureValueCalc.html">Future Value Calculator</a>
+            </li>
+        </ul>
+    </nav>
 
     <!-- Primary Content -->
     <section class="m-2 p-2 text-center">
 
         <h2 class="py-4 font-italic bg-dark text-light">Calculate Your Annuity Present Value!</h2><br>
 
-        <div class="bg-dark text-light py-2">
-            <p class="font-weight-bold">Annual Payout: <br><input id="annPayout" type="number"></p>
+        <form class="bg-dark text-light py-2">
+            <p class="font-weight-bold"><label for="annPayout">Annual Payout: </label><br><input id="annPayout" name="annPayout" type="number"></p>
 
-            <p class="font-weight-bold py-3">Interest Rate: <br><input id="interestRt" type="number"></p>
+            <p class="font-weight-bold py-3"><label for="interestRt">Interest Rate: </label><br><input id="interestRt" name="interestRt" type="number"></p>
 
-            <p class="font-weight-bold pb-3">Years Over Which Payments Will Be Made: <br><input id="yearsPayout" type="number"> </p>
+            <p class="font-weight-bold pb-3"><label for="yearsPayout">Years Over Which Payments Will Be Made: </label><br><input id="yearsPayout" name="yearsPayout" type="number"> </p>
 
             <input class="btn btn-success p-3" id="annCalc" type="button" value="Calculate Annuity">
 
-            <p class="pt-4 font-weight-bold">The Present Value of an Ordinary Annuity is: <br><input id="principalOut" type="text"></p><br>
+            <p class="pt-4 font-weight-bold"><label for="principalOut">The Present Value of an Ordinary Annuity is: </label><br><input id="principalOut" name="principalOut" type="text"></p><br>
 
 
             <a class="btn btn-primary p-3" href="index.html">Back To Home</a>
-        </div>
+        </form>
 
     </section>
 
@@ -67,7 +69,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="annuityCalc.js"></script>
+    <script src="scripts/annuityCalc.js"></script>
 </body>
 
 </html>
