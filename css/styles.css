@@ -1,12 +1,11 @@
 header {
-    background-image: url(images/bghead.png);
-    /* background image */
+    background-image: url("/images/bghead.png");
     background-size: cover;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
 }
 
 section {
-    background-image: url(images/bigmoneybg.jpg);
+    background-image: url("/images/bigmoneybg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
